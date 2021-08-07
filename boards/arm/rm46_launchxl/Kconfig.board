@@ -1,0 +1,7 @@
+# TI Hercules LaunchXL2-RM46 Development Board
+
+# SPDX-License-Identifier: Apache-2.0
+
+config BOARD_RM46_LAUNCHXL
+	bool "TI LAUNCHXL2-RM46"
+	depends on SOC_RM46L852
