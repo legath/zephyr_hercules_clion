@@ -1,0 +1,18 @@
+# Texas Instruments Hercules Family
+
+# SPDX-License-Identifier: Apache-2.0
+
+config SOC_FAMILY_TIHERCULES
+	bool
+
+if SOC_FAMILY_TIHERCULES
+
+config SOC_FAMILY
+	string
+	default "ti_hercules"
+
+rsource "*/Kconfig.soc"
+
+
+
+endif # SOC_FAMILY_TIHERCULES

@@ -1,0 +1,16 @@
+# TI Hercules RM46LXXX
+
+# Copyright (c) 2021, Alexander Bulychev <a.f.bulychev@gmail.com>
+# SPDX-License-Identifier: Apache-2.0
+
+if SOC_SERIES_RM46
+
+rsource "Kconfig.defconfig.rm46l*"
+
+config SOC_SERIES
+	default "rm46"
+
+config SYS_CLOCK_HW_CYCLES_PER_SEC
+    default 220000000
+
+endif # SOC_SERIES_RM46
